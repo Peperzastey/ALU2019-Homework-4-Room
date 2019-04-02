@@ -1,6 +1,5 @@
 package pl.daftacademy.androidlevelup.view.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import pl.daftacademy.androidlevelup.entity.Movie
 import pl.daftacademy.androidlevelup.entity.Movies

@@ -10,9 +10,6 @@ interface StudioDao {
     @Insert
     fun add(studio: Studio): Long
 
-    @Query("SELECT * FROM studio WHERE name = :name LIMIT 1")
-    fun getByName(name: String): Studio?
-
-    @Query("SELECT * FROM studio WHERE id = :id LIMIT 1")
-    fun getById(id: Int): Studio?
+    @Query("SELECT id FROM studio WHERE name = :name LIMIT 1")
+    fun getIdByName(name: String): Int?
 }

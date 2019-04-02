@@ -11,5 +11,5 @@ interface MovieDao {
     fun add(movies: Collection<Movie>)
 
     @Query("SELECT * FROM movie")
-    fun get(): List<Movie>
+    fun get(): List<MovieWithStudio>
 }
